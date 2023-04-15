@@ -1,0 +1,3 @@
+users:
+  - id: '{bob_id}'
+    name: 'Bob'

@@ -1,0 +1,7 @@
+.idea
+*.db
+.pytest_cache
+.git
+.coverage
+coverage_html_report
+__pycache__

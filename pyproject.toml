@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "database_rider"
+version = "1.2.0"
+description = "Database Rider for Python"
+authors = ["Pavlo Klivak <pavlo.klivak@acqu.co>"]
+packages = [
+    { include = "database_rider" },
+    { include = "database_rider/**/*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+peewee = "==3.14.10"
+PyYAML = "==6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "==7.1.1"
+pytest-mock = "==3.7.0"
+pytest-cov = "==3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "core"
+url = "https://py-ms-386126471484.d.codeartifact.us-east-2.amazonaws.com/pypi/backend--py-ms/"
+secondary = true
