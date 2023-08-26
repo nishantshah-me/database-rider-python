@@ -1,8 +1,8 @@
 from setuptools import find_packages, setup
 setup(
-    name='database_rider',
+    name='db_rider',
     packages=find_packages(include=['src/database_rider']),
-    version='1.2.0',
+    version='1.0.0',
     description='Database Rider for Python',
     author='Nishant Shah',
     license='Apache License 2.0',

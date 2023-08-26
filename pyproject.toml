@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "database_rider"
-version = "1.2.0"
+name = "db_rider"
+version = "1.0.0"
 description = "Database Rider for Python"
-authors = ["Pavlo Klivak <pavlo.klivak@acqu.co>"]
+authors = ["Nishant Shah <nishant@hexafoldtech.com>"]
 packages = [
     { include = "database_rider" },
     { include = "database_rider/**/*.py" },
