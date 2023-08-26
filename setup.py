@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 setup(
-    name='db_rider',
+    name='dbrider',
     packages=find_packages(include=['src/lib']),
     version='1.0.0',
     description='Database Rider for Python',

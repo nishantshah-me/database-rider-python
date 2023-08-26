@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "db_rider"
-version = "1.0.0"
+version = "1.0.1"
 description = "Database Rider for Python"
 authors = ["Nishant Shah <nishant@hexafoldtech.com>"]
 packages = [
-    { include = "database_rider" },
-    { include = "database_rider/**/*.py" },
+    { include = "db_rider" },
+    { include = "db_rider/**/*.py" },
 ]
 
 [tool.poetry.dependencies]

@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+dbrider.egg-info/PKG-INFO
+dbrider.egg-info/SOURCES.txt
+dbrider.egg-info/dependency_links.txt
+dbrider.egg-info/requires.txt
+dbrider.egg-info/top_level.txt
