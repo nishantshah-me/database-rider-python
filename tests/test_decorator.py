@@ -2,10 +2,10 @@ from unittest.mock import patch
 
 from peewee import Database
 
-from database_rider import setup_db_rider
-from database_rider.decorator import dataset
+from lib import setup_db_rider
+from lib.decorator import dataset
 
-from database_rider.handler import DataSetHandler
+from lib.handler import DataSetHandler
 
 
 @patch.object(DataSetHandler, '__init__', return_value=None, wraps=DataSetHandler.__init__)

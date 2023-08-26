@@ -4,11 +4,11 @@ from typing import Callable, Any
 
 from peewee import Database
 
-from database_rider.database import DatabaseExecutor
-from database_rider.handler import DataSetHandler
-from database_rider.loader import DataSetLoader, YamlDataSetLoader, DelegatingDataSetLoader, JsonDataSetLoader
-from database_rider.matcher import DataSetMatcher
-from database_rider.model import DataSetConfig
+from lib.database import DatabaseExecutor
+from lib.handler import DataSetHandler
+from lib.loader import DataSetLoader, YamlDataSetLoader, DelegatingDataSetLoader, JsonDataSetLoader
+from lib.matcher import DataSetMatcher
+from lib.model import DataSetConfig
 
 db_var = ContextVar('db')
 db_executor_var = ContextVar('database_executor')

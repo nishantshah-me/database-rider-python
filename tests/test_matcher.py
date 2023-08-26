@@ -2,8 +2,8 @@ import pytest
 from _pytest.outcomes import fail
 from peewee import SqliteDatabase
 
-from database_rider.database import DatabaseExecutor
-from database_rider.matcher import DataSetMatcher
+from lib.database import DatabaseExecutor
+from lib.matcher import DataSetMatcher
 
 
 @pytest.fixture(autouse=True)

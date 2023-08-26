@@ -1,7 +1,7 @@
 import pytest
 from peewee import SqliteDatabase
 
-from database_rider.database import DatabaseExecutor
+from lib.database import DatabaseExecutor
 
 
 @pytest.fixture(autouse=True)
