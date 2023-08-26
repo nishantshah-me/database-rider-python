@@ -14,16 +14,8 @@ jobs:
       - name: Install poetry
         run: pip install poetry
       - run: poetry install
-      - uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
       - name: Test Package and Generate Coverage Report
         run: poetry run pytest --cov --cov-config=.coveragerc --cov-report html
       - name: Build and publish
         run: |
-          export POETRY_HTTP_BASIC_CORE_USERNAME=aws
-          export POETRY_HTTP_BASIC_CORE_PASSWORD=`aws codeartifact get-authorization-token --domain py-ms --domain-owner ${{ secrets.AWS_ACCOUNT_ID }} --query authorizationToken --output text`
-          export AWS_REPOSITORY_URL=`aws codeartifact get-repository-endpoint --domain py-ms --domain-owner ${{ secrets.AWS_ACCOUNT_ID }} --repository backend--py-ms --format pypi --query repositoryEndpoint --output text`
-          poetry publish --repository core --build
+          echo "Work in progress"
