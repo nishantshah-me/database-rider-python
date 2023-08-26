@@ -4,7 +4,7 @@ setup(
     packages=find_packages(include=['src/database_rider']),
     version='1.2.0',
     description='Database Rider for Python',
-    author='Pavlo Klivak',
+    author='Nishant Shah',
     license='Apache License 2.0',
     install_requires=[
         'PyYAML==6.0',
