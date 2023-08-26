@@ -8,7 +8,7 @@ Tastes best with [TestContainers](https://github.com/testcontainers/testcontaine
 
 ## Intallation
 ```shell
-pip install database_rider
+pip install db_rider
 ```
 
 ## Setup
