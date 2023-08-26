@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  deploy-aws-repo:
+  deploy-on-pypi:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
