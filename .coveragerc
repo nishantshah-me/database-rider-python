@@ -29,4 +29,4 @@ ignore_errors = True
 directory = coverage_html_report
 
 [paths]
-source = lib/
+source = dbrider/
