@@ -1,8 +1,8 @@
 from setuptools import find_packages, setup
 setup(
     name='dbrider',
-    packages=find_packages(include=['src/lib']),
-    version='1.0.0',
+    packages=find_packages(include=['src/dbrider']),
+    version='1.0.1',
     description='Database Rider for Python',
     author='Nishant Shah',
     license='Apache License 2.0',

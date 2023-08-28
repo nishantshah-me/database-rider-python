@@ -2,7 +2,7 @@ from pathlib import Path
 
 from _pytest.outcomes import fail
 
-from lib.loader import YamlDataSetLoader, DelegatingDataSetLoader, JsonDataSetLoader
+from dbrider.loader import YamlDataSetLoader, DelegatingDataSetLoader, JsonDataSetLoader
 
 
 def test_yaml_loader():

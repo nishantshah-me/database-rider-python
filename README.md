@@ -20,7 +20,7 @@ Convenience `setup_db_rider` function is provided to simplify the setup process.
 #### PostgreSQL
 
 ```python
-from lib import setup_db_rider
+from dbrider import setup_db_rider
 from peewee import PostgresqlDatabase
 
 setup_db_rider(PostgresqlDatabase("postgresql://user:secret@localhost:5432/mydb?connect_timeout=10"))
@@ -29,7 +29,7 @@ setup_db_rider(PostgresqlDatabase("postgresql://user:secret@localhost:5432/mydb?
 #### Sqlite
 
 ```python
-from lib import setup_db_rider
+from dbrider import setup_db_rider
 from peewee import SqliteDatabase
 
 setup_db_rider(SqliteDatabase("test_matcher.db"))
@@ -75,7 +75,7 @@ statuses:
 ```
 
 ```python
-from lib.decorator import dataset
+from dbrider.decorator import dataset
 
 
 @dataset(dataset_paths=["datasets/users.yaml", "datasets/roles.json"],
@@ -90,7 +90,7 @@ variable `{status_name}` and interpolated from `dataset_variables` param.
 #### Alternatively a dataset can be provided programmatically
 
 ```python
-from lib.decorator import dataset
+from dbrider.decorator import dataset
 from faker import Faker
 
 
@@ -130,7 +130,7 @@ WHERE id = 1;
 ```
 
 ```python
-from lib.decorator import dataset
+from dbrider.decorator import dataset
 
 
 @dataset(execute_scripts_before=["sql/before.sql"],
@@ -173,7 +173,7 @@ statuses:
 ```
 
 ```python
-from lib.decorator import dataset
+from dbrider.decorator import dataset
 from IPy import IP
 
 
@@ -199,7 +199,7 @@ def test_something(session):
 #### Alternatively expected dataset can be provided programmatically
 
 ```python
-from lib.decorator import dataset
+from dbrider.decorator import dataset
 
 expected_dataset = {
     "users": [
@@ -226,7 +226,7 @@ By default, all tables in the specified database are cleaned up before and after
 this behavior with `cleanup_before`, `cleanup_after` and `cleanup_tables` params.
 
 ```python
-from lib.decorator import dataset
+from dbrider.decorator import dataset
 
 
 @dataset(cleanup_before=True, cleanup_after=False, cleanup_tables=['statuses', 'users'])

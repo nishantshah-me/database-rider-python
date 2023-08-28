@@ -3,11 +3,11 @@ from pathlib import Path
 import pytest
 from peewee import SqliteDatabase
 
-from lib.database import DatabaseExecutor
-from lib.handler import DataSetHandler
-from lib.loader import DelegatingDataSetLoader, JsonDataSetLoader, YamlDataSetLoader
-from lib.matcher import DataSetMatcher
-from lib.model import DataSetConfig
+from dbrider.database import DatabaseExecutor
+from dbrider.handler import DataSetHandler
+from dbrider.loader import DelegatingDataSetLoader, JsonDataSetLoader, YamlDataSetLoader
+from dbrider.matcher import DataSetMatcher
+from dbrider.model import DataSetConfig
 
 
 @pytest.fixture(autouse=True)
